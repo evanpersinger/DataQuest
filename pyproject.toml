@@ -1,0 +1,16 @@
+[project]
+name = "dataquest"
+version = "0.1.0"
+description = "Healthcare hackathon project analyzing ER wait times"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "jupyter",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
