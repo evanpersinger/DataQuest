@@ -4,13 +4,12 @@ version = "0.1.0"
 description = "Healthcare hackathon project analyzing ER wait times"
 requires-python = ">=3.9"
 dependencies = [
-    "pandas",
-    "numpy",
-    "scikit-learn",
+    "pandas>=2.0",
+    "numpy>=1.20",
+    "scikit-learn>=1.0",
+    "streamlit>=1.50",
     "matplotlib",
     "seaborn",
-    "xgboost",
-    "torch",
     "jupyter",
 ]
 

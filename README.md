@@ -1,25 +1,27 @@
 # DataQuest
 
-A machine learning project analyzing ER wait times, built for the Western AI Data Quest hackathon.
+A machine learning project analyzing ER wait times with an interactive simulator, built for the Western AI Data Quest hackathon.
 
 ## Overview
 
-This project explores and models emergency room wait time data using a combination of traditional machine learning and deep learning approaches. The analysis includes exploratory data analysis, feature engineering, and model evaluation.
+This project predicts emergency room wait times using machine learning models trained on real-world healthcare data. It includes exploratory analysis, feature engineering, model training, and an interactive Streamlit application for simulating wait times under different conditions.
 
 ## Dataset
 
-ER Wait Time Dataset containing healthcare-related metrics for predicting wait times and improving patient outcomes.
+ER Wait Time Dataset containing 5000+ records with patient and hospital metrics for predicting total wait times.
 
 ## Technologies
 
 - **Data Processing**: pandas, numpy
-- **Machine Learning**: scikit-learn, xgboost, torch
+- **Machine Learning**: scikit-learn (Linear Regression, Random Forest, Gradient Boosting)
+- **Frontend**: Streamlit
 - **Visualization**: matplotlib, seaborn
-- **Notebooks**: Jupyter
+- **Analysis**: Jupyter
 
 ## Project Structure
 
-- `notebook.ipynb` - Main analysis and model development
+- `app.py` - Interactive Streamlit application for wait time simulation
+- `notebook.ipynb` - Exploratory analysis, model training, and evaluation
 - `ER_Wait_Time_Dataset.csv` - Source dataset
 - `pyproject.toml` - Project dependencies and configuration
 
@@ -28,18 +30,20 @@ ER Wait Time Dataset containing healthcare-related metrics for predicting wait t
 Install dependencies using uv pip:
 
 ```bash
-uv pip install -r requirements.txt
-```
-
-Or install directly from pyproject.toml:
-
-```bash
 uv pip install -e .
 ```
 
 ## Usage
 
-Open and run the Jupyter notebook:
+Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+This opens an interactive interface where you can adjust patient and hospital variables to simulate predicted wait times.
+
+For analysis and model development, open the Jupyter notebook:
 
 ```bash
 jupyter notebook notebook.ipynb
