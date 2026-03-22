@@ -35,6 +35,14 @@ uv sync
 
 ## Usage
 
+Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+This opens an interactive interface where you can adjust patient and hospital variables to simulate predicted wait times.
+
+
 For analysis and model development, open the Jupyter notebook:
 
 ```bash
